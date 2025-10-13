@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+/* Additional handcrafted styles inspired by your HTML but refined */
+
+/* background blobs */
+.bg-blobs {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-blob {
+  position: absolute;
+  filter: blur(40px);
+  opacity: 0.55;
+  transform: translateZ(0);
+}
+
+/* glass */
+.glass {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  backdrop-filter: blur(8px);
+}
+
+/* small gradient underline used by nav */
+.nav-underline {
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  height: 2px;
+  width: 0;
+  background: linear-gradient(90deg, #7c3aed, #ec4899);
+  transition: width .28s ease;
+}
+
+/* Neon glow utility */
+.neon-glow {
+  box-shadow: 0 6px 24px rgba(124,58,237,0.12), inset 0 1px 0 rgba(255,255,255,0.02);
+}
+
+/* headline text shadow */
+.text-shadow {
+  text-shadow: 0 2px 16px rgba(0,0,0,0.6);
+}
+
+/* small helper to keep hero image circular and crisp */
+.profile-frame {
+  padding: 4px;
+  border-radius: 9999px;
+}
+
+/* reduce motion on small viewports */
+@media (max-width: 640px) {
+  .animate-fade-in, .animate-slide-up, .animate-slide-right {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+  }
+}
