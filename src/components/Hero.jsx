@@ -6,6 +6,7 @@ export default function Hero() {
     <section id="home" className="min-h-screen flex items-center relative z-10">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
         <div className="grid lg:grid-cols-2 gap-12 items-center">
+          {/* Left Text Content */}
           <div className="animate-slide-right">
             <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold mb-4 leading-tight">
               Hi, I'm{" "}
@@ -33,28 +34,38 @@ export default function Hero() {
             </div>
           </div>
 
+          {/* Right Profile Image */}
           <div className="flex justify-center lg:justify-end animate-fade-in">
             <div className="relative">
               <div className="w-72 h-72 rounded-full bg-gradient-to-br from-purple-400 to-pink-400 p-3 animate-spin-slow profile-frame">
                 <div className="w-full h-full rounded-full bg-gray-800 flex items-center justify-center overflow-hidden">
-                  <img src="src/assets/profile.png" className="text-7xl text-gray-400 rounded-full object-cover mt-14 " />
+                  {/* Updated image path */}
+                  <img 
+                    src="/assets/profile.png" 
+                    alt="Profile" 
+                    className="text-7xl text-gray-400 rounded-full object-cover mt-14" 
+                  />
                 </div>
               </div>
 
-              {/* small floating icons */}
+              {/* Small floating icons */}
               <div className="absolute -top-3 -left-3 glass rounded-2xl p-3 animate-float" style={{ animationDuration: "6s" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-purple-400"><path d="M3 12h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-purple-400">
+                  <path d="M3 12h18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
               </div>
 
               <div className="absolute -top-3 -right-3 glass rounded-2xl p-3 animate-float" style={{ animationDuration: "6s", animationDelay: "1s" }}>
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-cyan-400"><path d="M12 3v18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" /></svg>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" className="text-cyan-400">
+                  <path d="M12 3v18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" />
+                </svg>
               </div>
             </div>
           </div>
         </div>
       </div>
 
-      {/* scroll indicator */}
+      {/* Scroll Indicator */}
       <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce-slow">
         <div className="w-1 h-16 bg-gradient-to-b from-transparent to-purple-500 rounded-full" />
       </div>
