@@ -16,13 +16,15 @@ export default function Hero() {
             </h1>
 
             <h2 className="text-lg md:text-2xl text-gray-300 mb-6 font-medium">
-              Frontend & AI Developer
+              Frontend Developer
             </h2>
 
-            <p className="text-base md:text-lg text-gray-400 mb-8 max-w-xl leading-relaxed">
-              Passionate developer specializing in AI-powered web applications with expertise in React, TypeScript,
-              and modern frameworks. I build intuitive, scalable digital experiences that merge frontend craft with AI.
-            </p>
+            <p className="text-base md:text-lg text-gray-400 mb-8 max-w-xl leading-relaxed text-justify">
+              Frontend Developer skilled in building responsive, high-performance web applications using React, TypeScript, and modern CSS frameworks like Tailwind. Experienced in state management, 
+              API integration, and clean component architecture. Passionate about delivering intuitive 
+              UI/UX experiences and exploring AI-driven interfaces that enhance user interactivity and 
+              accessibility.
+              </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
               <a href="#contact" className="inline-block px-6 py-3 rounded-full font-semibold bg-gradient-to-r from-purple-500 to-pink-500 hover:scale-[1.02] transition transform neon-glow">

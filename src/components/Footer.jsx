@@ -1,5 +1,5 @@
 import React from "react";
-import { Github, Linkedin, Twitter, Mail } from "lucide-react";
+import { Github, Linkedin, Mail } from "lucide-react";
 
 export default function Footer() {
   return (
@@ -17,7 +17,7 @@ export default function Footer() {
             {/* Social Links */}
             <div className="flex space-x-4">
               <a
-                href="https://github.com/yourusername"
+                href="https://github.com/DHILIP1808"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 glass rounded-xl flex items-center justify-center text-gray-400 hover:text-purple-400 transition"
@@ -26,21 +26,12 @@ export default function Footer() {
               </a>
 
               <a
-                href="https://linkedin.com/in/yourusername"
+                href="https://www.linkedin.com/in/dilipkumar1808/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-10 h-10 glass rounded-xl flex items-center justify-center text-gray-400 hover:text-cyan-400 transition"
               >
                 <Linkedin className="w-5 h-5" />
-              </a>
-
-              <a
-                href="https://twitter.com/yourusername"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="w-10 h-10 glass rounded-xl flex items-center justify-center text-gray-400 hover:text-pink-400 transition"
-              >
-                <Twitter className="w-5 h-5" />
               </a>
 
               <a

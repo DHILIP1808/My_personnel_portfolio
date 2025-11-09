@@ -104,7 +104,7 @@ export default function Contact() {
               </div>
               <div>
                 <h4 className="font-semibold text-white mb-1">Location</h4>
-                <div className="text-gray-400">Chennai, Tamil Nadu</div>
+                <div className="text-gray-400">Marakkanam - 604 303, Tamil Nadu</div>
               </div>
             </div>
           </div>

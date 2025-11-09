@@ -2,19 +2,32 @@ import React from "react";
 
 const PROJECTS = [
   {
-    title: "LLM Chatbot with Custom UI",
+    title: "LLM Chatbot",
     desc: "Full-stack chatbot powered by large language models using OpenRouter API. Features interactive React frontend with TypeScript and FastAPI backend for AI response handling.",
-    tech: ["React", "TypeScript", "Python", "FastAPI"]
+    tech: ["React", "TypeScript", "Python", "FastAPI", "Vite", "Tailwind CSS"],
+    git: "https://github.com/DHILIP1808/LLM-CHATBOT",
+    live: "https://ai-assistant-trial.netlify.app/"
   },
   {
-    title: "Smart Rover for Plant Disease Detection",
-    desc: "Semi-autonomous rover for detecting plant diseases using real-time image capture and ML. Wi-Fi-enabled web interface for remote control and monitoring.",
-    tech: ["Python", "OpenCV", "ML", "Raspberry Pi"]
+    title: "Resume Analyser AI",
+    desc: "Developed an AI-powered web application that evaluates resumes, calculates ATS scores, and compares them with job descriptions using LLM integration to deliver detailed insights and improvement suggestions, while building a responsive, cross-browser compatible, and user-friendly interface that supports multiple formats (PDF, DOCX, text) with real-time analysis completed in under 30 seconds.",
+    tech: ["React", "Tailwind CSS", "Python", "Vite"],
+    git: "https://github.com/DHILIP1808/Resume_analyser",
+    live: "https://resume-analyser-frontend-8doz.onrender.com/"
   },
   {
-    title: "Fruitstore - E-commerce Website",
-    desc: "Responsive and modern e-commerce UI for an online fruit store. Focused on clean design and user-friendly interfaces with modern UI design.",
-    tech: ["React.js", "Tailwind CSS", "JavaScript"]
+    title: "QuickRead AI",
+    desc: "Developed an AI-powered document assistant that enables users to upload multiple file types (PDF, Word, Excel, Text, ZIP) and interact with their content through a natural language chat interface, while integrating LLM-based real-time, context-aware analysis and designing a fully responsive, cross-browser compatible UI with adjustable response creativity.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Python", "Vite"],
+    git: "https://github.com/DHILIP1808/Quickread",
+    live: "https://quickread-876n.onrender.com/"
+  },
+  {
+    title: "ShopSmart",
+    desc: "Built a modern, mobile-first e-commerce interface using React, TypeScript, Vite, and Tailwind CSS, ensuring smooth performance, intuitive UI design, and compatibility across all major browsers and devices, while implementing product cart and favorites functionality using Redux Toolkit for scalable state management and integrating the FakeStore API to dynamically fetch product data, showcasing strong API-driven UI development and component-based architecture skills.",
+    tech: ["React", "TypeScript", "Tailwind CSS", "Redux", "Vite"],
+    git: "https://github.com/DHILIP1808/shopsmart",
+    live: "https://shopsmart-vmk6.onrender.com/"
   }
 ];
 
@@ -35,16 +48,27 @@ export default function Projects() {
                   <span className="text-white font-semibold">P{idx + 1}</span>
                 </div>
                 <div className="flex gap-3">
-                  <a href="#" className="text-gray-400 hover:text-purple-400">Git</a>
-                 <a href="https://ai-assistant-trial.netlify.app/" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-purple-400">
-                       
-                        Live
+                  <a 
+                    href={p.git} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-400 hover:text-purple-400 transition-colors"
+                  >
+                    Git
                   </a>
-              </div>
+                  <a 
+                    href={p.live} 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-400 hover:text-purple-400 transition-colors"
+                  >
+                    Live
+                  </a>
+                </div>
               </div>
 
               <h3 className="text-lg font-semibold mb-2">{p.title}</h3>
-              <p className="text-sm text-gray-300 mb-4">{p.desc}</p>
+              <p className="text-sm text-gray-300 mb-4 text-justify">{p.desc}</p>
 
               <div className="flex flex-wrap gap-2">
                 {p.tech.map((t) => (

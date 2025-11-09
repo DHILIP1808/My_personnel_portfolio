@@ -1,6 +1,5 @@
 import React from "react";
-import { Cpu, BarChart3, Bug, Brain } from "lucide-react"; // import icons
-
+import { Code2,FileCode2,Brain } from "lucide-react"; // import icons
 export default function Experience() {
   return (
     <section id="experience" className="py-20 relative z-10">
@@ -32,10 +31,12 @@ export default function Experience() {
                   <p className="text-gray-400 text-sm mb-4">
                     March 2025 - September 2025
                   </p>
-                  <p className="text-gray-300">
-                    Developed responsive frontend applications using React,
-                    TypeScript, and Tailwind CSS. Built RAG-based LLM chatbot
-                    for agricultural learning.
+                  <p className="text-gray-300 text-justify">
+                    Developed responsive and performant frontend applications using React (Vite) and 
+                    Tailwind CSS to enhance UI/UX consistency and load speed, while building a 
+                    Retrieval-Augmented Generation (RAG) chatbot for agricultural learning by integrating 
+                    ChromaDB with Hugging Face and LLMs for contextual accuracy, applying hands-on expertise 
+                    in RAG and LLMs to incorporate advanced AI capabilities into modern frontend applications.
                   </p>
                 </div>
               </div>
@@ -61,9 +62,8 @@ export default function Experience() {
                   </p>
                   <p className="text-gray-400 text-sm mb-4">2021 - 2025</p>
                   <p className="text-gray-300">
-                    Electronics and Communication Engineering with 82%
-                    aggregate. Specialized in IoT, embedded systems, and AI
-                    integration projects.
+                    I completed my B.E. in Electronics and Communication Engineering at Adhiparasakthi 
+                    Engineering College, Melmaruvathur, with a CGPA of 8.2.
                   </p>
                 </div>
               </div>
@@ -71,28 +71,40 @@ export default function Experience() {
           </div>
         </div>
 
-        {/* Certifications */}
-        <div className="mt-16 animate-fade-in">
-          <h3 className="text-xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-            Certifications
-          </h3>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
-            {[
-              { text: "Embedded Systems and IoT", icon: Cpu },
-              { text: "Data Science", icon: BarChart3 },
-              { text: "Web Application Testing", icon: Bug },
-              { text: "Machine Learning with Python", icon: Brain },
-            ].map((c) => (
-              <div
-                key={c.text}
-                className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform"
-              >
-                <c.icon className="mx-auto text-purple-400 mb-4 w-8 h-8" />
-                <p className="text-gray-300 font-semibold">{c.text}</p>
-              </div>
-            ))}
-          </div>
-        </div>
+       {/* Certifications */}
+<div className="mt-16 animate-fade-in">
+  <h3 className="text-xl font-bold text-center mb-8 bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
+    Certifications
+  </h3>
+  <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+    {[
+      { 
+        text: "HTML CSS JavaScript", 
+        provider: "Infosys Springboard",
+        icon: Code2 
+      },
+      { 
+        text: "Python", 
+        provider: "Campus Connection",
+        icon: FileCode2 
+      },
+      { 
+        text: "Machine Learning with Python", 
+        provider: "Campus Connection",
+        icon: Brain 
+      },
+    ].map((c) => (
+      <div
+        key={c.text}
+        className="glass rounded-2xl p-6 text-center hover:scale-105 transition-transform cursor-pointer"
+      >
+        <c.icon className="mx-auto text-purple-400 mb-4 w-10 h-10" />
+        <p className="text-gray-100 font-bold text-lg mb-2">{c.text}</p>
+        <p className="text-gray-400 text-sm">by {c.provider}</p>
+      </div>
+    ))}
+  </div>
+</div>
       </div>
     </section>
   );
