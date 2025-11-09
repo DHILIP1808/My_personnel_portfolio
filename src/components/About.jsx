@@ -84,7 +84,7 @@ export default function About() {
               </div>
 
               <div className="glass rounded-2xl p-6 text-center">
-                <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 mb-2">4</div>
+                <div className="text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-purple-400 to-pink-500 mb-2">3</div>
                 <div className="text-gray-400 text-sm">Certifications</div>
               </div>
             </div>
